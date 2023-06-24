@@ -15,6 +15,7 @@ class Collection(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
+    slug = models.SlugField()
     price = models.IntegerField()
     inventory = models.IntegerField()
     last_updated = models.DateTimeField(auto_now=True)
